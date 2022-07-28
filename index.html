@@ -5,41 +5,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="shortcut icon" href="src/image/icons/favicon.ico" type="image/x-icon">
+    <script src="src/js/svg-inject.min.js"></script>
     <title>Security</title>
 </head>
 
 <body>
-    <div>
+    <div class="flex flex-space mb">
         <header>
-            <img src="src/svg/logo.svg" alt="">
+            <img src="src/svg/logo.svg" alt="Logo escrito Rcadeadocket.sect">
         </header>
-        <nav>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">Início</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">Serviços</a></li>
-            <li><a href="http://" target="_blank" rel="noopener noreferrer">Contato</a></li>
+        <nav class="flex flex-space">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
         </nav>
     </div>
-    <section>
-        <img src="src/svg/security.svg" alt="">
+    <main class="flex flex-space gap">
+        <img class="w" src="src/svg/security.svg"
+            alt="Mulher ao lado de um computador escrito code em binário em seu teclado co um cadeado flutuando sobre um círculo ao seu lado superior direito."
+            onload="SVGInject(this)">
         <div>
-            <h1>Seus dados estão <span>protegidos</span>?</h1>
-            <div>
+            <h1 class="mb">Seus dados estão <span class="text-emphasis">protegidos</span>?</h1>
+            <div class="text-center">
                 <p>
                     A informação é fundamental e <strong>de extrema importância</strong> para qualquer empresa.
                 </p>
                 <p>
-                    Aqui vai um texto como se fosse uma <span>empresa de segurança da informação</span> apresentando o
+                    Aqui vai um <strong>texto</strong> como se fosse uma <span class="text-emphasis">empresa de
+                        segurança da
+                        informação</span> apresentando o
                     seu produto e com o texto todo estilizado.
                 </p>
             </div>
         </div>
-    </section>
+    </main>
     <footer>
-        <img src="src/svg/padlock-decoration.svg" alt="">
-        <div>
-            para mais informações nos siga no instagram <a href="http://https://www.instagram.com/rocketseat_oficial/" target="_blank" rel="noopener noreferrer">@rocketsect</a>
+        <img src="src/svg/padlock-decoration.svg" alt="cadeado" onload="SVGInject(this)">
+        <div class="edge">
+            <p class="mt text-center">
+                para mais informações nos siga no instagram <a
+                    href="http://https://www.instagram.com/rocketseat_oficial/" target="_blank"
+                    rel="noopener noreferrer">@rocketsect</a>
+            </p>
         </div>
     </footer>
 </body>

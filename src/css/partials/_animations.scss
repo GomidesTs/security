@@ -1,0 +1,101 @@
+/* ANIMATIONS */
+/* floating padlock lock */
+.door-lock {
+    animation: up-go-down 3s linear infinite alternate;
+}
+
+@keyframes up-go-down {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
+
+/* Spy camera */
+.camera {
+    animation: change 5s ease infinite alternate;
+    opacity: 0;
+}
+
+@keyframes change {
+    0% {
+        opacity: 0.25;
+    }
+    25% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.75;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* leaked information */
+.description-1 {
+    animation: leaked-information 4s ease infinite alternate;
+}
+
+.description-2 {
+    transform: translateX(10px);
+    animation: leaked-information 3s 2s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes leaked-information {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(10px);
+    }
+}
+
+/* numbers going down */
+.low {
+    animation: to-float-low 3s ease-out infinite alternate;
+}
+
+@keyframes to-float-low {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(6px);
+    }
+}
+
+/* numbers rising */
+.self {
+    animation: to-float-self 3s ease-out infinite alternate;
+}
+
+@keyframes to-float-self {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-6px);
+    }
+}
+
+/* open padlock */
+.key {
+    animation: swinging 3s ease-in infinite alternate;
+    transform-origin: 0 0;
+}
+
+@keyframes swinging {
+    0% {
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(2deg);
+
+    }
+}

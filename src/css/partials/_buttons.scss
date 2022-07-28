@@ -1,0 +1,11 @@
+/* BUTTONS AND LIKES */
+a{
+    text-decoration: none;
+    &:hover{
+        color: $emphasis;
+    }
+}
+
+li{
+    list-style: none;
+}
